@@ -4,25 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <!-- iconscout cdn-- for icons 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- typed.js link -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+
 
 </head>
 <body>
 
   <div class="container">
-    <nav id=""></nav>
+    <nav id="header">
+      <div class="nav__logo">
+        <p class="logo_name">BaszEddy</p>
+        <span>.</span>
+      </div>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav_menu_list">
+
+          <li class="nav_list">
+            <a href="#about" class="nav-link">Home</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#" class="nav-link">About</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">projects</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">contact</a>
+            <div class="circle"></div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="nav-button">
+        <button class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i> 
+        </button> 
+      </div>
+
+      <div class="navbar-menu"> 
+        <i class="fa-solid fa-bars" onclick="handleMenuFunction()"></i>
+      </div>
+    </nav>
     
   </div>
   
 
 
-  <!-- scrolling eeffct i.e scroll reveal js link -->
+  <!-- scrolling effe ct i.e scroll reveal js link -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
+<!-- iconscout-monocrome link -->
+<!-- <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"/> -->
 
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
