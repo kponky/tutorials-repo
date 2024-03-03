@@ -26,4 +26,4 @@ if (menuButton.className === "navbar-menu"){
       navbarHeader.style.height = "90px";
       navbarHeader.style.lineHeight = "80px";
     }
-  }
+  } 
