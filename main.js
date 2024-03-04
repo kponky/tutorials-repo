@@ -27,3 +27,12 @@ if (menuButton.className === "navbar-menu"){
       navbarHeader.style.lineHeight = "80px";
     }
   } 
+
+ 
+  let handleTypingEffect = new Typed(".typedtext",{
+    strings: ["Web Developer", "Designer", "Teacher", "Virtual Assistant",],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 2000
+});
