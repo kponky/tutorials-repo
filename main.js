@@ -10,6 +10,9 @@ if (menuButton.className === "navbar-menu"){
 }
 };
 
+document.getElementById("navMenu").addEventListener("click", handleMenuFunction);
+
+
 
   window.onscroll = function(){headerShadow()};
 
@@ -17,14 +20,14 @@ if (menuButton.className === "navbar-menu"){
     const navbarHeader = document.getElementById("header");
     
     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-      navbarHeader.style.boxShadow = "0 1px 7px rgba(0, 0, 0, 0.7)";
-      navbarHeader.style.height = "80px";
-      navbarHeader.style.lineHeight = "70px";
+      navbarHeader.style.boxShadow = "0 2px 9px 1px rgba(0, 0, 0, 0.9)";
+      navbarHeader.style.height = "70px";
+      navbarHeader.style.lineHeight = "60px";
 
     }else {
       navbarHeader.style.boxShadow = "none";
-      navbarHeader.style.height = "90px";
-      navbarHeader.style.lineHeight = "80px";
+      navbarHeader.style.height = "80px";
+      navbarHeader.style.lineHeight = "70px";
     }
   } 
 
