@@ -190,8 +190,22 @@ border: 2px solid var(--second-color);
 
 .navbar-button .btn i{
   color : #bd5e0b;
+}
 
-  
+.active-link{
+  position: relative;
+  color: var(--hover-color1);
+  transition: .4;
+}
+
+.active-lin::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  width: 10px;
+  height: 10px;
+  background: var(--font-color1);
 }
 
 .wrapper {
@@ -557,21 +571,24 @@ background: var(--hover-color1);
   margin-bottom: 10px;
 }
 
-.blog-img p{
-  margin-top: 16px;
-  font-size: 17px;
+.blog-img a{
   text-decoration: none;
 }
 
+.blog-img a p{
+  margin-top: 16px;
+  font-size: 17px;
+  
+}
 
 .GeneratedMarquee {
   font-family:'Comic Sans MS';
-  font-size:20px;
+  font-size:30px;
   line-height: 10px;
   color: #8e0d25;
   background: #f2f1f5;
-  padding:1.5em;
-  margin-top: 90px;
+  padding:1em;
+  margin-top: 100px;
   
   }
 
