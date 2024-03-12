@@ -194,8 +194,9 @@ border: 2px solid var(--second-color);
 
 .active-link{
   position: relative;
-  color: var(--hover-color1);
-  transition: .4;
+  color: cyan;
+  /* color: var(--hover-color1); */
+  transition: .4s;
 }
 
 .active-lin::after{
