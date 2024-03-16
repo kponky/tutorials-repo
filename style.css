@@ -305,6 +305,11 @@ border: 2px solid var(--second-color);
   color: var(--color--white);
 }
 
+.icon a:hover{
+  color: var(--color--white);
+
+}
+
 .description-image {
   display: flex;
   justify-content: right;
