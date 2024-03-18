@@ -937,7 +937,7 @@ margin-bottom: 20px;
 
   .navbar-menu {
     position: fixed;
-    top: 80px;
+    top: 10px;
     left: -100%;
     /* justify-content: center; */
     text-align: center;
@@ -950,7 +950,7 @@ margin-bottom: 20px;
     min-height: 450px;
     height: 90vh;
     transition: .3s;
-    line-height: 90px;
+    line-height: 50px;
   }
 
   .nav_menu_list {
