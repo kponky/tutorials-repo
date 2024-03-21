@@ -377,6 +377,10 @@ nav .navbar-inner {
   width: 50%;
 }
 .contact-inner{
+<<<<<<< HEAD
+=======
+  background: pink;
+>>>>>>> 204cce93b16c3789e3cc90d10f07eaeca1ae824f
   overflow: hidden;
 }
 .top-header {
