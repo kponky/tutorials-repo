@@ -1,201 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <!-- iconscout cdn-- for icons 
+    <!-- iconscout cdn-- for icons 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> -->
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- typed.js link -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-
-
-
-</head>
-<body>
-
-  <div class="container">
+    <!-- typed.js link -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <!-- navbar start -->
     <nav id="header">
-      <div class="nav__logo">
-        <p class="logo_name">AbTech</p>
-        <!-- <span>.</span> -->
-      </div>
+      <div class="navbar-inner container">
+        <div class="nav__logo">
+          <p class="logo_name">AbTech</p>
+        </div>
 
-      <div class="navbar-menu" id="navMenu">
-        <ul class="nav_menu_list">
+        <div class="navbar-menu" id="navMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
 
-          <li class="nav_list">
-            <a href="#home" class="nav-link active-link">Home</a>
-            <div class="circle"></div>
-          </li>
-          <li class="nav_list">
-            <a href="#about" class="nav-link">About</a>
-            <div class="circle"></div>
-          </li>
-          <li class="nav_list">
-            <a href="#projects" class="nav-link">Projects</a>
-            <div class="circle"></div>
-          </li>
-          
-          <li class="nav_list">
-            <a href="#blog" class="nav-link">Blogs</a>
-            <div class="circle"></div>
-          </li>
+            <li class="nav_list">
+              <a href="#blog" class="nav-link">Blogs</a>
+              <div class="circle"></div>
+            </li>
 
-          <li class="nav_list">
-            <a href="#contact" class="nav-link">Contact</a>
-            <div class="circle"></div>
-          </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
 
-         
+        <div class="navbar-button">
+          <a
+            href="/assests/Abasi-ikponke Asuquo_Frontend_Development .pdf`"
+            download
+          >
+            <button class="btn">
+              Download CV <i class="fa-solid fa-file-arrow-down"></i>
+            </button>
+          </a>
+        </div>
 
-        </ul>
-      </div>
-
-      <div class="navbar-button">
-         <a href="/assests/Abasi-ikponke Asuquo_Frontend_Development .pdf`" download> <button class="btn">  Download CV <i class="fa-solid fa-file-arrow-down"></i> 
-        </button> </a>
-      </div>
-
-      <div class="navbar-menu-icon" id="mmme"> 
-        <i class="fa-solid fa-bars" onclick="handleMenuFunction()"></i>
+        <div class="navbar-menu-icon" id="MenuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
     </nav>
-
-    <div class="wrapper">
-
-      <section class="description-box" id="home">
-        
+    <!-- navbar end -->
+    <!-- hero section -->
+    <section class="description-box container" id="home">
+      <div class="description-box-inner">
         <div class="description-text">
-        <div class="description-text-card">
-          <span>Abasi-ikponke Asuquo</span>
+          <div class="description-text-card">
+            <span>Abasi-ikponke Asuquo</span>
+          </div>
+          <div class="description-name">
+            <p>I'm a <span class="typedtext">Frontend Designer</span></p>
+          </div>
+          <div class="description-text-info">
+            <p>
+              Dedicated Frontend Developer who specializes in crafting engaging
+              and user-friendly web experiences that seamlessly blend creativity
+              with functionality. With a keen eye for design and a passion for
+              cutting-edge technologies, I excel at translating client
+              requirements into visually stunning and responsive interfaces.
+            </p>
+          </div>
+          <div class="description-text-btn">
+            <button class="btn b-btn">Hire Me</button>
+            <button class="btn">
+              Download CV <i class="fa-solid fa-file-arrow-down"></i>
+            </button>
+          </div>
+          <div class="social-icons">
+            <div class="icon">
+              <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
-        
-        <div class="description-name">
-          <p>I'm a <span class="typedtext">Frontend Designer</span></p>
-        </div>
-        <div class="description-text-info">
-          <p>Dedicated Frontend Developer who specializes in crafting engaging and
-             user-friendly web experiences that seamlessly blend creativity with functionality. 
-             With a keen eye for design and a passion for cutting-edge technologies, I excel at translating client requirements into visually stunning and responsive interfaces.
-          </p>
-        </div>
-        <div class="description-text-btn">
-          <button class="btn b-btn">Hire Me</button>
-          <button class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
-        </div>
-        <div class="social-icons">
-         
-          <div class="icon"><a href=""> <i class="fa-brands fa-linkedin"></i></a> </div>
-          <div class="icon"><a href=""><i class="fa-brands fa-github"></i></a> </div>
-          <div class="icon"><a href=""><i class="fa-brands fa-square-x-twitter"></i></a> </div>
-          <div class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a> </div>
-        </div>
-
-      </div>
-
-
-      <div class="description-image">
-        <div class="image">
-          <img src="/assests/avatar_female_developer2-removebg-preview.png" alt="avatar">
+        <div class="description-image">
+          <div class="image">
+            <img
+              src="/assests/avatar_female_developer2-removebg-preview.png"
+              alt="avatar"
+            />
+          </div>
         </div>
       </div>
 
       <div class="scroll_down_icon">
-       <a href="#about" class="scroll-btn"></a>
-       <i class="fa-solid fa-computer-mouse"></i>
-        <p>scroll Down  </p>
+        <a href="#about" class="scroll-btn"></a>
+        <i class="fa-solid fa-computer-mouse"></i>
+        <p>scroll Down</p>
       </div>
-
-
     </section>
+    <!-- hero section end-->
+    <!-- about section -->
+    <section class="section aboutme-section container" id="about">
+      <div class="about-inner">
+        <div class="top-header">
+          <h1>About Me</h1>
+        </div>
 
+        <div class="row">
+          <div class="col">
+            <div class="aboutMe-info">
+              <h3>My Introduction</h3>
+              <p>
+                Abasi-ikponke Asuquo is a tech-savvy, she is well versed and has
+                a strong proficiency in web development, particularly in
+                frontend technologies such as HTML, CSS, JavaScript and other
+                cutting edge frameworks and libraries. This allows her to
+                implemnt interactive features. Abasz is dedicated to creating
+                user-friendly and visually appealing websites that deliver
+                exceptional user experiences. she thrives in collaborative
+                environments and enjoys staying updated on the latest trends and
+                advancements in the field. Outside of work, Abasz loves cooking,
+                dancing, singing, and volunteering at local coding workshops to
+                inspire the next generation of female developers.
+              </p>
 
-<section class="section aboutme-section " id="about">
-<div class="top-header">
-  <h1>About Me</h1>
-</div>
-
-<div class="row">
-  <div class="col">
-    <div class="aboutMe-info">
-      <h3>My Introduction</h3>
-      <p>Abasi-ikponke Asuquo is a tech-savvy, she is well versed and has a strong proficiency in web development, particularly
-          in frontend technologies such as HTML, CSS, JavaScript and other cutting edge frameworks and libraries. This allows her to implemnt interactive features.
-          Abasz is dedicated to creating user-friendly 
-          and visually appealing websites that deliver exceptional
-           user experiences. she thrives in collaborative environments 
-           and enjoys staying updated on the latest trends and advancements
-            in the field. Outside of work, Abasz loves cooking, dancing, singing, 
-            and volunteering at local coding workshops to inspire the next 
-            generation of female developers.
-          </p>
-
-            <div class="about-btn">
-              <a href="#home"><button class="btn">Download CV <i class="fa-solid fa-file-arrow-down"></i></button>
-              </a>
+              <div class="about-btn">
+                <a href="#home"
+                  ><button class="btn">
+                    Download CV <i class="fa-solid fa-file-arrow-down"></i>
+                  </button>
+                </a>
+              </div>
             </div>
-    </div>
-    
-  </div>
-
-  <div class="col">
-    <!-- <div class="skills-wrapper"> -->
-    <div class="skills">
-      <div class="skills-header">
-        <h3>Frontend libraries </h3>
+          </div>
+          <div class="col">
+            <!-- <div class="skills-wrapper"> -->
+            <div class="skills">
+              <div class="skills-header">
+                <h3>Frontend libraries</h3>
+              </div>
+              <div class="skills-lists">
+                <span> React</span>
+                <span>jQuery</span>
+                <span>D3.js</span>
+                <span>Axios</span>
+                <span>Redux</span>
+              </div>
+            </div>
+            <div class="skills">
+              <div class="skills-header">
+                <h3>Frontend Frameworks</h3>
+              </div>
+              <div class="skills-lists">
+                <span>Material-UI</span>
+                <span>Semantic UI</span>
+                <span>Boostrap</span>
+                <span>Typescript</span>
+                <span>Tailwind CSS</span>
+                <span>Foundation</span>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
       </div>
-  
-      <div class="skills-lists">
-        <span> React</span>
-        <span>jQuery</span>
-        <span>D3.js</span>
-        <span>Axios</span>
-        <span>Redux</span>
-        
-
-
-    </div>
-    </div>
-
-    <div class="skills">
-      <div class="skills-header">
-        <h3>Frontend Frameworks </h3>
-      </div>
-  
-      <div class="skills-lists">
-        <span>Material-UI</span>
-        <span>Semantic UI</span>
-        <span>Boostrap</span>
-        <span>Typescript</span>
-        <span>Tailwind CSS</span>
-        <span>Foundation</span>
-      </div>
-    </div>
-    
-  </div>
-<!-- </div> -->
-
-</div>
-
-    
     </section>
-
-
-    <section class="section" id="projects">
-
+    <!-- about section end -->
+    <!-- project section -->
+    <section class="section container" id="projects">
       <div class="top-header">
         <h1>Projects</h1>
       </div>
 
       <div class="projects-wrapper">
-
         <div class="project-wrap">
           <i class="fa fa-briefcase" aria-hidden="true"></i>
           <h3>Completed Works</h3>
@@ -203,202 +210,225 @@
         </div>
 
         <div class="project-wrap">
-          <i class="fas fa-award fa-2x "></i>
+          <i class="fas fa-award fa-2x"></i>
           <h3>Experiences</h3>
           <label>1+ years in the field </label>
         </div>
 
-
         <div class="project-wrap">
           <i class="fa fa-users" aria-hidden="true"></i>
-          <h3> Clients </h3>
-          <label> over 5+  clients </label>
+          <h3>Clients</h3>
+          <label> over 5+ clients </label>
         </div>
-       
       </div>
 
-        <div class="slide-container">
-          <div class="slide fade">
-            <img src='/assests/carousel img/alpine site.png' alt=''>
-          </div>
-          <div class="slide fade">
-            <img src='/assests/carousel img/Business site.png' alt=''>
-          </div>
-          <div class="slide fade">
-            <img src='/assests/carousel img/ecommerce site shop.png' alt=''>
-          </div>
-          <div class="slide fade">
-            <img src='/assests/carousel img/quotes generator .png' alt=''>
-          </div>
-          <div class="slide fade">
-            <img src='/assests/carousel img/todo list app.png' alt=''>
-          </div>
-          <div class="slide fade">
-            <img src='/assests/carousel img/quotes generator .png' alt=''>
-          </div>
-    
-          <a href="3" class="prev" title="Previous">&#10094</a>
-          <a href="#" class="next" title="Next">&#10095</a>
+      <div class="slide-container">
+        <div class="slide fade">
+          <img src="/assests/carousel img/alpine site.png" alt="" />
         </div>
-        <div class="dots-container" id = "dots-wrapper">
-          <span class="dot"id = "dots" ></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+        <div class="slide fade">
+          <img src="/assests/carousel img/Business site.png" alt="" />
         </div>
-      
-      
-   
-    
+        <div class="slide fade">
+          <img src="/assests/carousel img/ecommerce site shop.png" alt="" />
+        </div>
+        <div class="slide fade">
+          <img src="/assests/carousel img/quotes generator .png" alt="" />
+        </div>
+        <div class="slide fade">
+          <img src="/assests/carousel img/todo list app.png" alt="" />
+        </div>
+        <div class="slide fade">
+          <img src="/assests/carousel img/quotes generator .png" alt="" />
+        </div>
+        <div class="prev" title="Previous">&#10094;</div>
+        <div class="next" title="Next">&#10095;</div>
+      </div>
+      <div class="dots-container" id="dots-wrapper">
+        <span class="dot" id="dots"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </section>
-
-
-<!-- blogs wrapper -->
-
-
-<section class="section" id="blog">
-
-  <div class="top-header">
-    <h1>Blogs</h1>
- </div>
-<div class="blog-wrapper">
-    <div class="blog-img">
-      <a href="#home"><img src="/assests/blog images/blog img 1.jpg" alt=""></a>
-      <a href="#home"><p>Read more...</p></a>
-
-    </div>
-    <div class="blog-img">
-      <a href="#home"><img src="/assests/blog images/blog img 2.jpg" alt=""></a>
-      <a href="#home"><p>Read more...</p></a>
-    </div>
-    <div class="blog-img">
-      <a href="#home"><img src="/assests/blog images/blog img 3.jpg" alt=""></a>
-      <a href="#home"><p>Read more...</p></a>
-
-    </div>
-    <div class="blog-img">
-      <a href="#home"><img src="/assests/blog images/blog img 4.jpg" alt=""></a>
-      <a href="#home"><p>Read more...</p></a>
-
-    </div>
-    <div class="blog-img">
-      <a href="#home"><img src="/assests/blog images/blog img 5.jpg" alt=""></a>
-      <a href="#home"><p>Read more...</p></a>
-
-    </div>
-    <div class="blog-img">
-      <a href="#home"><img src="/assests/blog images/blog img 6.jpg" alt=""></a>
-      <a href="#home"><p>Read more...</p></a>
-
-    </div>
-</div>
-
-<div class="marque">
-  <marquee class="GeneratedMarquee" direction="left" scrollamount="4" behavior="scroll">  <p>Blog post is Coming soon...</p></marquee>
-</div>
-
-
- 
-      
-</section>
-
-
-
-
-
-    <!--=------------------contact wrapper ------------------->
-
-    <section class="section" id="contact">
-      <div class="top-header">
-        <h1>Get in Touch</h1>
-        <span>Do you have a project in mind, would you like to hire? contact me here</span>
+    <!-- project section end -->
+    <!-- blog section -->
+    <section class="section" id="blog">
+      <div class="top-header container">
+        <h1>Blogs</h1>
       </div>
+      <div class="blog-wrapper container">
+        <div class="blog-card">
+          <a href="#home">
+            <div class="blog-card-img">
+              <img src="/assests/blog images/blog img 1.jpg" alt="" />
+            </div>
+          </a>
+          <a href="#home"><p>Read more...</p></a>
+        </div>
+        <div class="blog-card">
+          <a href="#home">
+            <div class="blog-card-img">
+              <img src="/assests/blog images/blog img 2.jpg" alt="" />
+            </div>
+          </a>
+          <a href="#home"><p>Read more...</p></a>
+        </div>
+        <div class="blog-card">
+          <a href="#home">
+            <div class="blog-card-img">
+              <img src="/assests/blog images/blog img 3.jpg" alt="" />
+            </div>
+          </a>
+          <a href="#home"><p>Read more...</p></a>
+        </div>
+        <div class="blog-card">
+          <a href="#home">
+            <div class="blog-card-img">
+              <img src="/assests/blog images/blog img 4.jpg" alt="" />
+            </div>
+          </a>
+          <a href="#home"><p>Read more...</p></a>
+        </div>
+        <div class="blog-card">
+          <a href="#home">
+            <div class="blog-card-img">
+              <img src="/assests/blog images/blog img 5.jpg" alt="" />
+            </div>
+          </a>
+          <a href="#home"><p>Read more...</p></a>
+        </div>
+        <div class="blog-card">
+          <a href="#home">
+            <div class="blog-card-img">
+              <img src="/assests/blog images/blog img 6.jpg" alt="" />
+            </div>
+          </a>
+          <a href="#home"><p>Read more...</p></a>
+        </div>
+      </div>
+      <div class="marque">
+        <marquee
+          class="GeneratedMarquee"
+          direction="left"
+          scrollamount="4"
+          behavior="scroll"
+        >
+          <p>Blog post is Coming soon...</p></marquee
+        >
+      </div>
+    </section>
+    <!-- blog section end -->
+    <!-- contact section -->
+    <section class="section container" id="contact">
+      <div class="contact-inner">
+        <div class="top-header">
+          <h1>Get in Touch</h1>
+          <span
+            >Do you have a project in mind, would you like to hire? contact me
+            here</span
+          >
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>
+                Find me <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              </h2>
+              <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>Email:
+                ikponkedet@gmail.com
+              </p>
+              <p>
+                <i class="fa fa-phone" aria-hidden="true"></i>tel: +234 814 958
+                8764
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <form class="form-control">
+              <div class="form-inputs">
+                <div class="input-group">
+                  <input type="text" class="input-field" placeholder="Name" />
+                </div>
+                <div class="input-group">
+                  <input type="text" class="input-field" placeholder="Email" />
+                </div>
+              </div>
+              <div class="input-group">
+                <textarea name="" id="" placeholder="Message"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn">
+                  Send <i class="fa fa-mail-forward" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <p>AbTech</p>
+        </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="contact-info">
-            <h2>Find me <i class="fa fa-arrow-down" aria-hidden="true"></i></h2>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i>Email: ikponkedet@gmail.com</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i>tel: +234 814 958 8764</p>
+        <div class="middle_footer">
+          <ul class="footer_menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_socials_icons">
+          <div class="icon">
+            <a href="www.linkedin.com/in/abasi-ikponke-asuquo-0629731b8">
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </div>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/esyteena/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </div>
         </div>
 
-        <div class="col">
-       <div class="form-control">
-        <div class="form-inputs">
-          <input type="text" class="input-field" placeholder="Name">
-          <input type="text" class="input-field" placeholder="Email">
-        </div>
-
-        <div class="text-area">
-          <textarea name="" id=""  placeholder="Message"></textarea>
-        </div>
-
-        <div class="form-button">
-          <button class="btn"> Send  <i class="fa fa-mail-forward" aria-hidden="true"></i></button> 
-        </div>
-       </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy; <a href="#home">Abtech</a> - All rights reserved
+          </p>
         </div>
       </div>
+    </footer>
+    <!-- footer end -->
 
-    </section>
+    <!-- scrolling effe ct i.e scroll reveal js link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    </div>
+    <!-- iconscout-monocrome link -->
+    <!-- <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"/> -->
 
-    
-
-    
-  </div>
-  
-
-  <!-- footer wrapper -->
-
-<footer>
-  
-<div class="top-footer">
-  <p>AbTech</p>
-</div>
-
-<div class="middle_footer">
-  <ul class="footer_menu">
-    <li class="footer_menu_list">
-      <a href="#home">Home</a>
-    </li>
-    <li class="footer_menu_list">
-      <a href="#about">About</a>
-    </li>
- 
-    <li class="footer_menu_list">
-      <a href="#projects">Projects</a>
-    </li>
-    <li class="footer_menu_list">
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</div>
-
-<div class="footer_socials_icons">
-  <div class="icon"><a href="www.linkedin.com/in/abasi-ikponke-asuquo-0629731b8"> <i class="fa-brands fa-linkedin"></i></a> </div>
-          <div class="icon"><a href=""><i class="fa-brands fa-github"></i></a> </div>
-          <div class="icon"><a href=""><i class="fa-brands fa-square-x-twitter"></i></a> </div>
-          <div class="icon"><a href="https://www.instagram.com/esyteena/"><i class="fa-brands fa-instagram"></i></a> </div>
-</div>
-
-<div class="bottom-footer">
-<p>Copyright &copy; <a href="#home">Abtech</a> - All rights reserved </p> 
-
-</div>
-
-</footer>
-</div>
-
-
-  <!-- scrolling effe ct i.e scroll reveal js link -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-<!-- iconscout-monocrome link -->
-<!-- <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"/> -->
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
