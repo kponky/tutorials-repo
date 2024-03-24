@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.getElementById("MenuBtn");
   const navbarMenu = document.getElementById("navMenu");
   const navLinks = document.querySelectorAll(".nav-link");
+  let sections = document.querySelectorAll('section');
+
 
   function handleMenuFunction() {
     navbarMenu?.classList.toggle("show");
@@ -20,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollActive();
   };
 
+ 
+
   function headerShadow() {
     const navbarHeader = document.getElementById("header");
 
@@ -35,6 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
       navbarHeader.style.height = "90px";
       navbarHeader.style.lineHeight = "70px";
     }
+
+    let sections = document.querySelectorAll('section');
+// let navLinks = document.querySelectorAll('header nav a');
+ 
   }
 
   let handleTypingEffect = new Typed(".typedtext", {
@@ -58,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
     sr.reveal(".description-name", { delay: 200 });
     sr.reveal(".description-text-info", { delay: 200 });
     sr.reveal(".description-text-btn", { delay: 200 });
-    sr.reveal(".description-image", { delay: 300 });
+    sr.reveal(".description-image", { delay: 200 });
     sr.reveal(".projects-wrapper", { interval: 200 });
-    sr.reveal(".blog-wrapper", { interval: 300 });
+    sr.reveal(".blog-wrapper", { interval: 200 });
     sr.reveal(".top-header", {});
 
     const srLeft = ScrollReveal({
@@ -76,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const srRight = ScrollReveal({
       origin: "right",
       distance: "100px",
-      duration: 2500,
+      duration: 2200,
       reset: true,
     });
 
@@ -86,28 +94,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
   initializeScrollReveal();
 
-  const sections = document.querySelectorAll("section[id]");
 
-  function scrollActive() {
-    const scrollY = window.scrollY;
 
-    sections.forEach((current) => {
-      const heightSection = current.offsetHeight,
-        topSection = current.offsetTop - 50,
-        sectionId = current.getAttribute("id"),
-        navLink = document.querySelector(
-          ".navbar-menu a[href*=" + sectionId + "]"
-        );
+//   window.onscroll = () => {
+//     sections.forEach(current => {
+//         let top = window.scrollY;
+//         let offset = current.offsetTop - 80;
+//         let height = current.offsetHeight;
+//         let id = current.getAttribute('id');
+//         if(top >= offset && top < offset + height) {
+//             navLinks.forEach(links => {
+//                 links.classList.remove('activeLink');
+//                 document.querySelectorAll('header nav_list a[href*=' + id + ']').classList.add('activeLink');
+//             });
+//         };
+//     });
+// };
 
-      if (navLink) {
-        if (scrollY > topSection && scrollY <= topSection + heightSection) {
-          navLink.classList.add("active-link");
-        } else {
-          navLink.classList.remove("active-link");
-        }
-      }
-    });
-  }
+
+
+
+  // const sections = document.querySelectorAll("section[id]");
+
+  // function scrollActive() {
+  //   const scrollY = window.scrollY;
+
+  //   sections.forEach((current) => {
+  //     const heightSection = current.offsetHeight,
+  //       topSection = current.offsetTop - 50,
+  //       sectionId = current.getAttribute("id"),
+  //       navLink = document.querySelector(
+  //         ".navbar-menu a[href*=" + sectionId + "]"
+  //       );
+
+  //     if (navLink) {
+  //       if (scrollY > topSection && scrollY <= topSection + heightSection) {
+  //         navLink.classList.add("active-link");
+  //       } else {
+  //         navLink.classList.remove("active-link");
+  //       }
+  //     }
+  //   });
+  // }
 });
 
 let currentSlide = 0;
@@ -150,6 +178,27 @@ dots?.forEach((dot, i) => {
     currentSlide = i;
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // // navigation bar function
 
@@ -254,4 +303,4 @@ dots?.forEach((dot, i) => {
 //   })
 // }
 
-// window.addEventListener('scroll', scrollActive)
+// window.addEventListener('scroll', scrollActive);
